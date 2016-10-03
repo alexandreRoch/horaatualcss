@@ -1,5 +1,5 @@
 const body = document.querySelector('body')
-const h1 = document.querySelector('section h1')
+const h1 = document.querySelector('main section h1')
 
 hora = () => {
   let data = new Date()
@@ -22,7 +22,6 @@ const css = () => {
   sec = sec < 10 ? '0' + sec : sec
   return "#" + hora + "" + min + "" + sec
 }
-
 setInterval(()=> {
   let data = new Date()
   h1.innerHTML = hora()
